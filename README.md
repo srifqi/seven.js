@@ -2,6 +2,7 @@ seven.js
 ========
 
 Seven Segment Display Library
+
 This will help you to generate seven segment display (alphanumeric) using text, HTML text, or render it with Canvas or SVG Renderer
 
 ##How to Use
