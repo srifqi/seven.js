@@ -6,14 +6,20 @@
 		<h1>An example of seven.js usage</h1>
 		<script src="build/seven.min.js"></script>
 		<script>
-		var renderer = new SEVEN.CanvasRenderer({canvas:document.getElementById("t")});
-		document.body.appendChild(renderer.domElement);
+		var text, renderer;
+		window.onload = init;
+		function init() {
+			text = new SEVEN.Word(20140419);
+			renderer = new SEVEN.CanvasRenderer();
+			renderer.setSize(window.innerWidth,500);
+			renderer.color = new SEVEN.Color(0,0,0); //black
+			document.body.appendChild(renderer.domElement);
+			render();
+		}
 		
-		window.onload = function render() {
-		var tex = new SEVEN.Word(20140419);
-		renderer.setSize(window.innerWidth,500);
-		renderer.color = new SEVEN.Color(0,0,0; //black
-		renderer.render(tex);
+		function render() {
+			renderer.render(text);
+		}
 		</script>
 	</body>
 </html>
