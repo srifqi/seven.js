@@ -1,1 +1,19 @@
-My Github Page
+<html>
+	<head>
+		<title>seven.js - seven segment display library</title>
+	</head>
+	<body style="margin: 0px; font-family: monospace; background: white; font-size: large; font-weight: bold;">
+		<h1>An example of seven.js usage</h1>
+		<script src="seven.min.js"></script>
+		<script>
+		var renderer = new SEVEN.CanvasRenderer({canvas:document.getElementById("t")});
+		document.body.appendChild(renderer.domElement);
+		
+		window.onload = function render() {
+		var tex = new SEVEN.Word(20140419);
+		renderer.setSize(window.innerWidth,500);
+		renderer.color = new SEVEN.Color(0,0,0; //black
+		renderer.render(tex);
+		</script>
+	</body>
+</html>
